@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>P02 - Style Guide Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/responsive-nav.css" rel="stylesheet" type="text/css">
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <link href="./css/interaction.css" rel="stylesheet" type="text/css">
+    <link href="./css/grid.css" rel="stylesheet" type="text/css">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Assistant:wght@200;300;400;600;700&display=swap" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+
+
+    <!-- =======Style guide Nav // -->
+    <nav class="sg-nav">
+
+        <!-- nav icon// -->
+        <label for="sg-hamburger">&#9776;</label>
+        <input type="checkbox" id="sg-hamburger" />
+
+        <!-- nav menu// -->
+        <div class="nav-items">
+            <a href="#interactive_elements" class="nav-link ">Interactive Elements</a>
+            <a href="#text_elements" class="nav-link">Text Elements</a>
+            <a href="#combined_elements" class="nav-link">Combined Elements</a>
+            <a href="http://www.sfu.ca/~qla68/IAT339-Company-Web/product_listing.html" class="nav-link">Product Listing Template</a>
+            <a href="http://www.sfu.ca/~qla68/IAT339-Company-Web/checkout.html" class="nav-link">Checkout Template</a>
+        </div>
+
+    </nav>
+
+
+
+    <h1 class="sg-title">P02 - Style Guide</h1>
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements" class="interactive_elements">
+        <h2 class="section-title">Interactive Elements</h2>
+
+
+
+        <!-- Default In-Text Link styling section -->
+        <section class="element container">
+            <h3 class="type-title">In-text link</h3>
+
+            <div class="box1">
+                <h4>CSS selector:</h4>
+                <p>.in-text-link</p>
+            </div>
+
+            <div class="box2">
+                <h4>Sample code:</h4>
+                <code>&lt;a href="#" class="in-text-link"&gt;In-Text Link&lt;/a&gt;</code>
+            </div>
+
+            <div class="box3">
+                <h4>Rendered element:</h4>
+                <a class="in-text-link" href="#">In-Text Link</a>
+            </div>
+        </section>
+
+
+        <!-- Default Button styling section -->
+        <section class="element container">
+
+            <h3 class="type-title">Navigation Link</h3>
+
+            <div class="box1">
+                <h4>CSS selector:</h4>
+                <p>.nav-link</p>
+            </div>
+            <div class="box2">
+                <h4>Sample code:</h4>
+                <code>&lt;a href="#" class="nav-link"&gt;Navigation Link&lt;/a&gt;</code>
+            </div>
+            <div class="box3">
+                <h4>Rendered element:</h4>
+                <a class="nav-link" href="#">Navigation Link</a>
+            </div>
+
+        </section>
+
+        <!-- Default Submit/Reset Button styling section -->
+        <section class="element container">
+            <h3 class="type-title">Submit/Reset Buttons</h3>
+            <div class="box1">
+                <h4>CSS selector:</h4>
+                <p>.submit-reset</p>
+            </div>
+
+            <div class="box2">
+                <h4>Sample code:</h4>
+                <code>&lt;input type="submit"&gt;</code><br>
+                <code>&lt;input type="reset"&gt;</code>
+            </div>
+
+            <div class="box3">
+                <h4>Rendered element:</h4>
+                <input type="submit" class="submit-reset" value="Submit">
+                <input type="reset" class="submit-reset" value="Reset">
+            </div>
+        </section>
+
+        <!-- Default text input styling section -->
+        <section class="element container">
+            <h3 class="type-title">Text Input Field with Label</h3>
+            <div class="box1">
+                <h4>CSS selector:</h4>
+                <p>.text-input</p>
+            </div>
+            <div class="box2">
+                <h4>Sample code:</h4>
+                <code>&lt;input type="text" id="text" name="text"&gt;</code><br>
+                <code>&lt;label for="text"&gt;Label&lt;/label&gt;</code>
+            </div>
+
+            <div class="box3">
+                <h4>Rendered element:</h4>
+                <form class="text-input">
+                    <input type="text" id="text" name="text" required>
+                    <label for="text">Label</label>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- Default Radio Button styling section -->
+        <section class="element container">
+            <h3 class="type-title">Radio Button with Label</h3>
+            <div class="box1">
+                <h4>CSS selector:</h4>
+                <p>.radio-button</p>
+            </div>
+
+            <div class="box2">
+                <h4>Sample code:</h4>
+                <code>&lt;input type="radio" id="radio-button" name="label" value="label"&gt;</code><br>
+                <code>&lt;label for="radio-button"&gt;Label&lt;/label&gt;</code>
+            </div>
+
+            <div class="box3">
+                <h4>Rendered element:</h4>
+                <div class="radio-button">
+                    <input type="radio" id="radio-button" name="label" value="label" class="radio-input">
+                    <label for="radio-button">Label</label>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Default Image Link styling section -->
+        <section class="element container">
+            <h3 class="type-title">Image as a Link</h3>
+            <div class="box1">
+                <h4>CSS selector:</h4>
+                <p>.image-link</p>
+            </div>
+            <div class="box2">
+                <h4>Sample code:</h4>
+                <code>&lt;a href="#" class="image-link"&gt;&lt;img source="image.png" alt="a image"&gt;&lt;/a&gt;</code>
+            </div>
+            <div class="box3">
+                <h4>Rendered element:</h4>
+                <a href="#" class="img-link">
+                    <div class="img-frame">
+                        <img src="./img/p5.jpg" alt="image">
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements" class="text_elements">
+        <h2 class="section-title">Text Elements</h2>
+
+        <section class="element container">
+            <h3 class="type-title">Headings</h3>
+            <div class="code-box">
+                <h4 class="code-render-title">Sample code:</h4>
+                <div class="code-background">
+                    <code>&lt;h1&gt;Heading 1&lt;/h1&gt;<br>
+                        &lt;h2&gt;Heading 2&lt;/h2&gt;<br>
+                        &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
+                        &lt;h4&gt;Heading 4&lt;/h4&gt;</code>
+                </div>
+            </div>
+
+            <div class="element-box">
+                <h4 class="code-render-title">Rendered element:</h4>
+                <div class="sample-heading">
+                    <h1>Heading1</h1>
+                    <h2>Heading2</h2>
+                    <h3>Heading3</h3>
+                    <h4>Heading4</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- paragraph SECTION // -->
+        <section class="element container">
+            <h3 class="type-title">Paragraphs</h3>
+            <div class="code-box">
+                <h4 class="code-render-title">Sample code:</h4>
+
+                <div class="code-background">
+                    <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                        pellentesque eu, pretium quis, sem. &lt;/p&gt;</code>
+                </div>
+
+            </div>
+            <div class="element-box sample-paragraph">
+                <h4 class="code-render-title">Rendered element:</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem.
+                </p>
+            </div>
+        </section>
+
+        <!-- numbered list SECTION // -->
+        <section class="element container">
+            <h3 class="type-title">Numbered Lists</h3>
+            <div class="code-box">
+                <h4 class="code-render-title">Sample code:</h4>
+
+                <div class="code-background">
+                    <code>&lt;ol type="1"&gt;<br>
+                        &lt;li&gt;item1&lt;/li&gt;<br>
+                        &lt;li&gt;item2&lt;/li&gt;<br>
+                        &lt;li&gt;item3&lt;/li&gt;<br>
+                        &lt;/ol&gt;</code>
+                </div>
+            </div>
+            <div class="element-box">
+                <h4 class="code-render-title">Rendered element:</h4>
+                <ol type="1">
+                    <li>item1</li>
+                    <li>item2</li>
+                    <li>item3</li>
+                </ol>
+            </div>
+        </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements" class="combined_elements">
+        <h2 class="section-title">Combined Elements</h2>
+
+        <!-- Main navigation SECTION // -->
+        <section class="element container">
+            <h3 class="type-title">Main Navigation</h3>
+
+            <div class="code-box">
+                <h4 class="code-render-title">Sample code:</h4>
+                <div class="code-background">
+                    <code>&lt;nav class="main-nav"&gt;<br>
+                        &lt;a class="nav-link" href="#"&gt;Home&lt;/a&gt;<br>
+                        &lt;a class="nav-link" href="#"&gt;About&lt;/a&gt;<br>
+                        &lt;a class="nav-link" href="#"&gt;Shop&lt;/a&gt;<br>
+                        &lt;a class="nav-link" href="#"&gt;Contact&lt;/a&gt;<br>
+                        &lt;/nav&gt;</code>
+                </div>
+            </div>
+            <div class="element-box">
+                <h4 class="code-render-title">Rendered element:</h4>
+
+                <div class="sample-nav">
+                    <nav>
+
+                        <!-- nav icon// -->
+                        <label for="hamburger">&#9776;</label>
+                        <input type="checkbox" id="hamburger" />
+
+                        <!-- nav menu// -->
+                        <div class="nav-items">
+                            <a href="#" class="nav-link">Home</a>
+                            <a href="#" class="nav-link">About</a>
+                            <a href="#" class="nav-link">Shop</a>
+                            <a href="index.html" class="nav-link">Contact</a>
+                            <a href="#" class="nav-link"><img src="./img/cart.svg" alt=""></a>
+                        </div>
+
+                    </nav>
+                    <img src="./img/nv-bg.png" alt="">
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <!-- product listing SECTION // -->
+        <section class="element container sample">
+            <h3 class="type-title">Product/Service Listing</h3>
+            <div class="code-box">
+                <h4 class="code-render-title">Sample code:</h4>
+                <div class="code-background">
+                    <code>
+                        &lt;h4>Rendered element:&lt;/h4&gt;<br>
+                        &lt;img src="lipstick.jpg"/ alt="lipstick"&gt;<br>
+                        &lt;h5&gt;WANDF Lipstick 01&lt;/h5&gt;<br>
+                        &lt;p&gt;$50.00&lt;/p&gt;<br>
+                        &lt;a href = "#">view details&lt;/a&gt;</code>
+                </div>
+            </div>
+
+            <div class="element-box">
+                <h4 class="code-render-title">Rendered element:</h4>
+                <div class="product-list">
+                    <div class="product-box">
+                        <a href="#" class="img-link">
+                            <div class="img-frame">
+                                <img src="./img/p6.jpg" alt="image">
+                            </div>
+                        </a>
+                        <h4>WANDF Lipstick 01</h4>
+                        <p>$50.00</p>
+                        <a href="#" class="in-text-link">view details</a>
+                    </div>
+                    <div class="product-box">
+                        <a href="#" class="img-link">
+                            <div class="img-frame">
+                                <img src="./img/p7.jpg" alt="image">
+                            </div>
+                        </a>
+                        <h4>WANDF Lipstick 02</h4>
+                        <p>$60.00</p>
+                        <a href="#" class="in-text-link">view details</a>
+                    </div>
+                    <div class="product-box">
+                        <a href="#" class="img-link">
+                            <div class="img-frame">
+                                <img src="./img/p8.jpg" alt="image">
+                            </div>
+                        </a>
+                        <h4>WANDF Lipstick 03</h4>
+                        <p>$70.00</p>
+                        <a href="#" class="in-text-link">view details</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Payment form SECTION // -->
+        <section class="element container sample">
+            <h3 class="type-title">Payment Form</h3>
+            <div class="code-box">
+
+                <h4 class="code-render-title">Sample code:</h4>
+                <div class="code-background">
+                    <code>&lt;label for="name"&gt;Name&lt;/label&gt;<br>
+                        &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;<br>
+                        &lt;label for="address"&gt;Address&lt;/label&gt;<br>
+                        &lt;input type="text" id="address" name="adress"&gt;&lt;br&gt;<br>
+                        &lt;label for="address"&gt;Phone Number&lt;/label&gt;<br>
+                        &lt;input type="text" id="phone-num" name="phone-num">&lt;br&gt;<br>
+                        &lt;p&gt;Payment Option:&lt;/p&gt;<br>
+                        &lt;input type="radio" id="master-card" name="payment" value="master-card"&gt;<br>
+                        &lt;label for="master-card"&gt;Master Card&lt;/label&gt;&lt;br&gt;<br>
+                        &lt;input type="radio" id="visa" name="payment" value="visa"&gt;<br>
+                        &lt;label for="visa"&gt;Visa&lt;/label&gt;&lt;br&gt;<br>
+                        &lt;input type="radio" id="paypal" name="payment" value="paypal"&gt;<br>
+                        &lt;label for="paypal"&gt;Paypal&lt;/label&gt;&lt;br&gt;<br>
+                        &lt;input type="submit" value="Submit"&gt;</code>
+                </div>
+            </div>
+            <div class="element-box">
+                <h4 class="code-render-title">Rendered element:</h4>
+
+                <form class="form-box">
+                    <div class="text-input">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Name</label><br>
+                    </div>
+
+                    <div class="text-input">
+                        <input type="text" id="address" name="adress" required>
+                        <label for="address">Address</label><br>
+                    </div>
+
+                    <div class="text-input">
+                        <input type="text" id="phone-num" name="phone-num" required>
+                        <label for="phone-num">Phone</label><br>
+                    </div>
+
+                    <div class="text-input">
+                        <input type="text" id="card-num" name="card-num" required>
+                        <label for="card-num">Card</label><br>
+                    </div>
+
+                    <div class="text-input">
+                        <input type="text" id="cvv" name="cvv" required>
+                        <label for="cvv">CVV</label><br>
+                    </div>
+
+
+                    <input type="submit" value="Submit" class="submit-reset">
+                </form>
+
+            </div>
+        </section>
+
+
+
+        <!-- // check out section -->
+        <section class="element container sample">
+            <h3 class="type-title">Checkout Cart</h3>
+            <div class="code-box">
+                <h4 class="code-render-title">Sample code:</h4>
+                <div class="code-background">
+                    <code>
+                        &lt;p>item1 &lt;span class="price"&gt;15.00&lt;/span&gt; &lt;span class="amount"&gt;x1&lt;/span&gt;&lt;/p&gt;<br>
+                        &lt;p>item2 &lt;span class="price"&gt;25.00&lt;/span&gt; &lt;span class="amount"&gt;x1&lt;/span&gt;&lt;/p&gt;<br>
+                        &lt;p&gt;Total: 40.00&lt;/p&gt;</code>
+                </div>
+            </div>
+
+            <div class="element-box">
+
+                <h4 class="code-render-title">Rendered element:</h4>
+                <div class="cart">
+                    <div class="cart-box">
+                        <img src="./img/p6.jpg" alt="">
+                        <p class="name">GLAMOUR VELVET LIQUID LIPSTICK</p>
+                        <p>$50.00</p>
+                    </div>
+
+                    <div class="cart-box">
+                        <img src="./img/p8.jpg" alt="">
+                        <p class="name">BLURRING LIQUID LIP</p>
+                        <p>$70.00</p>
+                    </div>
+
+                    <h4>Total: $120.00</h4>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+
+    <!-- // COMBINED ELEMENTS SECTION -->
+    <section id="basic-idea" class=" basic-idea ">
+
+        <h2 class="section-title">Basic Branding Ideas</h2>
+
+        <div class="container">
+            <h3>What does the company do, or offer?</h3>
+            <p>
+                Lips&Lips is a third party lipstick retailer sales the brands from Asia, for example, 3CE, Perfect Diaries and etc.
+            </p>
+
+            <h3>Who is the company to potential customers?</h3>
+            <p>
+                The potential customers are teenager girls who like brand of lipstick from Asia with fashion design.
+            </p>
+
+            <h3>Why might this company entice someone to purchase a product or service?</h3>
+            <p>
+                In Canada, most of retailers like Sephora only sales brand lipstick from U.S or Europe. Most of their target audiences are woman instead of teenagers. This store provides the option for tennagers to purchase the brands designed for them which is hard to find in North America.
+            </p>
+        </div>
+    </section>
+
+
+    <section id="assemble">
+
+        <h2 class="section-title">Assemble Brand Components</h2>
+        <section class="element container">
+            <h3 class="type-title">Font </h3>
+            <div class="font-sample">
+                <h1>Heading#1 - Assistant</h1>
+                <h2>Heading#2 - Assistant</h2>
+                <h3>Heading#3 - Achivo</h3>
+                <h4>Heading#4 - Achivo</h4>
+                <p>Paragraphs/buttons - PT Sans</p>
+            </div>
+
+            <div class="font-sample">
+                <h1>Main title sample</h1>
+                <h2>subtitle text sample</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+            </div>
+        </section>
+
+        <section class="element container color-platte">
+            <h3>Color Platte</h3>
+            <img src="./img/platte.png" alt="platte">
+        </section>
+
+        <section class="element container icon">
+            <h3 class="type-title">Icons</h3>
+
+            <img src="./img/facebook.png" alt="facebook">
+            <img src="./img/ins.png" alt="ins">
+            <img src="./img/twitter.png" alt="twitter">
+            <img src="./img/cart.svg" alt="cart">
+
+        </section>
+
+
+        <section class="element container footer">
+            <h3 class="type-title">Footer</h3>
+
+            <footer>
+                <p>© Lips&Lips 2020. All rights reserved.</p>
+                <div class="linkBox">
+                    <a href="http://www.sfu.ca/~qla68/IAT339-P02_StyleGuide/">Style Guide</a>
+                    <a href="http://www.sfu.ca/~qla68/IAT339-Company-Web/citation.html">Citation</a>
+                    <a href="https://github.com/339p02/IAT339-Company-Web">Website Git</a>
+                    <a href="https://github.com/339p02/IAT339-P02_StyleGuide">Style Guide Git</a>
+                </div>
+                <div class="iconBox">
+                    <a href="#" class="img-link"><img src="./img/facebook.png" alt="facebook"></a>
+                    <a href="#" class="img-link"><img src="./img/twitter.png" alt="twitter"></a>
+                    <a href="#" class="img-link"><img src="./img/ins.png" alt="instagram"></a>
+                </div>
+            </footer>
+
+        </section>
+
+    </section>
+
+
+
+
+    <section id="citations" class="citation container">
+        <h2 class="type-title">Citations</h2>
+
+        <ul>
+             <li>Font PT Sans, retrieved from https://fonts.google.com</li>
+              <li>Font - Archivo, retrieved from https://fonts.google.com</li>
+              <li>Font - Assistant, retrieved from https://fonts.google.com</li>
+              <li>Icons, retrieved from https://www.flaticon.com/free-icon</li>
+              <li>Lipsticks imagery and information for 3ce products, retrieved from https://en.stylenanda.com/</li>
+              <li>Lipsticks imagery information for perfect-diary products, retrieved from https://www.perfectdiary.com/</li>
+              <li>Lips imagery, retrieved from https://encrypted-tbn0.gstatic.com/</li>
+              <li>Cover page imagery, retrieved from https://images.unsplash.com/</li>
+              <li>CSS tutorial, retrieved from https://www.w3schools.com/tags/tag_input.asp</li>
+              <li>Flexbox Guide, retrieved from https://css-tricks.com/snippets/css/a-guide-to-flexbox/</li>
+              <li>Responsive navigation tutorial, retrieved from https://medialoot.com/blog/how-to-create-a-responsive-navigation-menu-using-only-css/</li>
+              <li>5 Star tutorial, retrieved from https://www.w3schools.com/howto/howto_css_star_rating.asp</li>
+        </ul>
+
+    </section>
+
+
+
+</body></html>
