@@ -11,10 +11,7 @@
     <link href="./css/interaction.css" rel="stylesheet" type="text/css">
     <link href="./css/grid.css" rel="stylesheet" type="text/css">
 
-
-
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Assistant:wght@200;300;400;600;700&display=swap" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
@@ -336,16 +333,16 @@
                  <form class="sample-form">
              
               <div class="text-input left-form">
-                  <label label for="fname" >First Name</label>
-                <input label type="text" id="fname" name="firstname" required>
-                  <label label for="lname">Last Name</label>
-                <input label type="text" id="lname" name="lastname" required>
+                  <label for="fname" >First Name</label>
+                <input type="text" id="fname" name="firstname" required>
+                  <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" required>
               </div>
 
 
-              <div class="text-input text-area right-form">
+              <div class="text-input right-form text-area">
                     <label  for="message">Message</label>
-                  <textarea type="text" id="message" name="message" required></textarea>
+                  <textarea class="ta" id="message" name="message" required></textarea>
               
              </div>
                      <div class=submit-area>
@@ -414,7 +411,7 @@
             <img src="./image/platte.png" alt="platte">
         </section>
 
-        <section class="element container icon-section">
+        <section class="element container">
             <h3 class="type-title">Icons</h3>
 
              <a href="#" class="icon"><img src="./image/icon/facebook.svg" alt="facebook"></a>
@@ -428,19 +425,21 @@
             <h3 class="type-title">Footer</h3>
 
             <footer>
-                <p>© Lips&Lips 2020. All rights reserved.</p>
+                <p>© Jason Liu 2020. All rights reserved.</p>
                 <div class="linkBox">
-                    <a href="http://www.sfu.ca/~qla68/IAT339-P02_StyleGuide/">Style Guide</a>
-                    <a href="http://www.sfu.ca/~qla68/IAT339-Company-Web/citation.html">Citation</a>
-                    <a href="https://github.com/339p02/IAT339-Company-Web">Website Git</a>
-                    <a href="https://github.com/339p02/IAT339-P02_StyleGuide">Style Guide Git</a>
-                </div>
-                <div class="iconBox">
-                    <a href="#" class="img-link"><img src="./img/facebook.png" alt="facebook"></a>
-                    <a href="#" class="img-link"><img src="./img/twitter.png" alt="twitter"></a>
-                    <a href="#" class="img-link"><img src="./img/ins.png" alt="instagram"></a>
+                    <a href="#">Style Guide</a>
+                    <a href="#">Citation</a>
+                    <a href="#">Website Git</a>
+                    <a href="#">Style Guide Git</a>
                 </div>
             </footer>
+
+        </section>
+        
+        
+         <section class="element container">
+            <h3 class="type-title">Imagery</h3>
+
 
         </section>
 
@@ -469,6 +468,6 @@
 
     </section>
 
-
+   <script src="./js/textarea.js"></script>
 
 </body></html>

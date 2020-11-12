@@ -44,6 +44,34 @@ h4 {
     color: #36312F;
 }
 
+footer p{
+    font-size: 16px;
+    flex: 1 1 50%;
+}
+
+footer{
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    width: 100%;
+    padding: 0 100px;
+    background-color: #E1E1E1;
+}
+
+.linkBox{
+    flex: 1 1 50%;
+}
+
+.linkBox a{
+        text-decoration: none;
+    color: #635850;
+    float: right;
+    padding: 0 15px;
+}
+
+
+
 .section-title {
     text-align: center;
     border-bottom: 2px solid #E1E1E1;
