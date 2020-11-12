@@ -208,11 +208,13 @@ footer{
 
 
 .sg-nav .nav-items a {
-    flex: 1 1 10%;
+    width: 250px;
+    padding-top: 30px;
 }
 
-.sg-nav .nav-items {
-    justify-content: center;
+.sg-nav{
+    height: 80px;
+    padding: 0 90px;
 }
 
 .sg-title {
