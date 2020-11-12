@@ -10,6 +10,7 @@
 
 html {
     background-color: #F7F7F4;
+    padding: 30px;
 }
 
 p {
@@ -23,6 +24,7 @@ h1 {
 }
 
 h2 {
+    font-family: 'Cousine', monospace;
     font-size: 50px;
 
 }
@@ -48,12 +50,12 @@ h4 {
 
 
 .code-render-title {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     color: black;
 }
 
 .code-background {
-    background-color: #9c644c;
+    background-color: #E1E1E1;
     padding: 20px;
     width: 100%;
 }
@@ -81,7 +83,10 @@ h4 {
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: #B3ACA8;
-    margin-bottom: 10px;
+}
+
+.skill-section p{
+    margin-bottom:5px;
 }
 
 .html {
@@ -126,38 +131,6 @@ h4 {
 
 
 /*====================others==================*/
-
-.basic-idea .container {
-    border-bottom: 2px solid black;
-    flex-direction: column;
-    margin-top: 60px;
-}
-
-.basic-idea h3 {
-    padding-left: 60px;
-    margin-bottom: 0;
-    margin-top: 60px;
-}
-
-.basic-idea p {
-    padding-left: 60px;
-    margin-top: 8px;
-    width: 100%;
-    font-size: 16px;
-}
-
-@media (max-width:590px) {
-    .basic-idea h3 {
-        padding-left: 0;
-        margin-top: 20px;
-        ;
-    }
-
-    .basic-idea p {
-        padding-left: 0px;
-
-    }
-}
 
 .color-platte img {
     width: 100%;

@@ -67,6 +67,7 @@ input[type="text"]:hover {
     outline: none;
     border: 2px solid transparent;
     width:100%;
+    margin-top: 10px;
 }
 
 .text-input label {
@@ -76,13 +77,33 @@ input[type="text"]:hover {
     width:100%;
 }
 
+.sample-form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-form,.right-form{
+    width:80%;
+    flex: 1 1 40%;
+    margin-right: 30px;
+}
+
+.submit-area{
+flex: 1 1 100%;
+    padding-right: 15px;
+}
+.submit-area .submit{
+    float: right;
+}
 textarea {
     height: 105px;
     background-color: #E1E1E1;
     border: none;
     outline: none;
     margin-bottom: 20px;
+    margin-top: 10px;
      border: 2px solid transparent;
+    width: 100%;
 }
 
 .submit {
@@ -113,3 +134,24 @@ textarea {
     font-weight: 800;
 }
 
+.sample-nav nav {
+    background-color: transparent;
+    position: relative;
+    z-index: 99;
+    border: 1px solid black;
+    padding-right: 50px;
+}
+
+.sample-nav img {
+    width: 100%;
+    border: 1px solid black;
+    border-top: none;
+}
+
+.sample-nav .nav-link {
+    padding-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    width: auto;
+}
