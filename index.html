@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8">
-    <title>P02 - Style Guide Template</title>
+    <title>P03 - Style Guide Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/responsive-nav.css" rel="stylesheet" type="text/css">
     <link href="./css/main.css" rel="stylesheet" type="text/css">
@@ -42,7 +42,7 @@
 
 
 
-    <h1 class="sg-title">P02 - Style Guide</h1>
+    <h1 class="sg-title">P03 - Style Guide</h1>
 
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
@@ -94,22 +94,20 @@
 
         <!-- Default Submit/Reset Button styling section -->
         <section class="element container">
-            <h3 class="type-title">Submit/Reset Buttons</h3>
+            <h3 class="type-title">Submit Button</h3>
             <div class="box1">
                 <h4>CSS selector:</h4>
-                <p>.submit-reset</p>
+                <p>.submit</p>
             </div>
 
             <div class="box2">
                 <h4>Sample code:</h4>
                 <code>&lt;input type="submit"&gt;</code><br>
-                <code>&lt;input type="reset"&gt;</code>
             </div>
 
             <div class="box3">
                 <h4>Rendered element:</h4>
-                <input type="submit" class="submit-reset" value="Submit">
-                <input type="reset" class="submit-reset" value="Reset">
+                <input type="submit" class="submit" value="Submit">
             </div>
         </section>
 
@@ -129,8 +127,8 @@
             <div class="box3">
                 <h4>Rendered element:</h4>
                 <form class="text-input">
-                    <input type="text" id="text" name="text" required>
                     <label for="text">Label</label>
+                    <input type="text" id="text" name="text" required>
                 </form>
             </div>
         </section>
@@ -173,11 +171,11 @@
             </div>
             <div class="box3">
                 <h4>Rendered element:</h4>
-                <a href="#" class="img-link">
-                    <div class="img-frame">
+                <div class="img-hover">
+                <a href="#">
                         <img src="./img/p5.jpg" alt="image">
-                    </div>
                 </a>
+                </div>
             </div>
         </section>
 
@@ -234,30 +232,6 @@
             </div>
         </section>
 
-        <!-- numbered list SECTION // -->
-        <section class="element container">
-            <h3 class="type-title">Numbered Lists</h3>
-            <div class="code-box">
-                <h4 class="code-render-title">Sample code:</h4>
-
-                <div class="code-background">
-                    <code>&lt;ol type="1"&gt;<br>
-                        &lt;li&gt;item1&lt;/li&gt;<br>
-                        &lt;li&gt;item2&lt;/li&gt;<br>
-                        &lt;li&gt;item3&lt;/li&gt;<br>
-                        &lt;/ol&gt;</code>
-                </div>
-            </div>
-            <div class="element-box">
-                <h4 class="code-render-title">Rendered element:</h4>
-                <ol type="1">
-                    <li>item1</li>
-                    <li>item2</li>
-                    <li>item3</li>
-                </ol>
-            </div>
-        </section>
-
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
 
@@ -275,9 +249,8 @@
                 <h4 class="code-render-title">Sample code:</h4>
                 <div class="code-background">
                     <code>&lt;nav class="main-nav"&gt;<br>
-                        &lt;a class="nav-link" href="#"&gt;Home&lt;/a&gt;<br>
                         &lt;a class="nav-link" href="#"&gt;About&lt;/a&gt;<br>
-                        &lt;a class="nav-link" href="#"&gt;Shop&lt;/a&gt;<br>
+                        &lt;a class="nav-link" href="#"&gt;Project&lt;/a&gt;<br>
                         &lt;a class="nav-link" href="#"&gt;Contact&lt;/a&gt;<br>
                         &lt;/nav&gt;</code>
                 </div>

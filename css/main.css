@@ -1,48 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
     box-sizing: border-box;
-}
-
-p {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 1.5vw;
+    font-family: 'Anonymous Pro', monospace;
+    transition: .3s ease-in-out;
 }
 
 html {
-    font-family: 'PT Sans', sans-serif;
-    background-color: #fbf3f3;
+    background-color: #F7F7F4;
 }
 
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Archivo', sans-serif;
-}
-
-h1,
-h2 {
-    font-family: 'Assistant', sans-serif;
+p {
+    font-size: 20px;
+    color: #635850;
 }
 
 h1 {
-    font-size: 4.5vw;
+    font-family: 'Cousine', monospace;
+    font-size: 100px;
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 50px;
+
 }
 
 h3 {
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 40px;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .section-title {
     text-align: center;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #E1E1E1;
     padding-bottom: 20px;
     padding-top: 20px;
     margin-top: 0;
@@ -80,6 +76,27 @@ h4 {
 }
 
 
+/*=======SKILLS===========*/
+.skills {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #B3ACA8;
+    margin-bottom: 10px;
+}
+
+.html {
+    width: 100%;
+}
+
+.css {
+    width: 80%;
+}
+
+.js {
+    width: 10%;
+}
+
+
 /*================text elements==========*/
 
 
@@ -106,151 +123,6 @@ h4 {
 
 
 
-
-/*=======PRODUCTION LIST===========*/
-.product-list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.product-box {
-    display: flex;
-    flex: 1 1 25%;
-    flex-direction: column;
-    align-items: center;
-}
-
-.product-box h4 {
-    font-size: 18px;
-    font-weight: 200;
-    margin: 0;
-    text-align: center;
-    width: 230px;
-}
-
-.product-box p {
-    font-size: 16px;
-    margin-top: 8px;
-    margin-bottom: 0;
-}
-
-.product-box a {
-    margin-bottom: 35px;
-}
-
-
-@media (max-width: 768px) {
-    .combined_elements .container {
-        flex-direction: column;
-    }
-
-    .combined_elements .code-box {
-        width: 100%;
-    }
-
-    .product-box p {
-        font-size: 16px;
-    }
-
-    .product-box h4 {
-        font-size: 16px;
-        width: 180px;
-    }
-
-    .product-box .in-text-link {
-        font-size: 15px;
-        opacity: 1;
-        background-color: black;
-        color: white;
-        margin-bottom: 50px;
-    }
-
-
-
-}
-
-/*=======NAVIGATION===========*/
-.sample-nav nav {
-    background-color: #fbf3f3;
-    position: relative;
-    z-index: 99;
-    border: 1px solid black;
-    border-bottom: none;
-}
-
-.sample-nav img {
-    width: 100%;
-    border: 1px solid black;
-    border-top: none;
-}
-
-.sample-nav a {
-    font-size: 18px;
-    padding-top: 15px;
-}
-
-.sample-nav .nav-link img {
-    width: 20px;
-    border: none;
-
-
-}
-
-@media (max-width: 1024px) {
-    .sample-nav .nav-items a {
-        font-size: 16px;
-        padding: 5px;
-        padding-top: 10px;
-    }
-}
-
-
-
-
-
-
-
-/*======================Cart===========*/
-
-
-.cart-box {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid black;
-}
-
-.cart img,
-.cart p {
-    flex: 1 1 35%;
-    font-size: 17px;
-    text-align: center;
-}
-
-.cart h4 {
-    text-align: right;
-    font-size: 18px;
-    font-weight: 300;
-}
-
-
-
-.cart img {
-    width: 10vw;
-    padding: 20px;
-}
-
-@media (max-width:590px) {
-
-    .cart p {
-        font-size: 16px;
-    }
-
-    .cart h4 {
-        font-size: 17px;
-        margin-bottom: 60px;
-    }
-
-}
 
 
 /*====================others==================*/
