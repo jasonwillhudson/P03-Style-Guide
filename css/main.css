@@ -43,33 +43,29 @@ h4 {
     color: #36312F;
 }
 
-footer p{
-    font-size: 16px;
-    flex: 1 1 50%;
-}
-
-footer{
-    font-size: 16px;
+footer {
+    font-size: 1.3rem;
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 0 100px;
+    padding: 2rem 3rem;
     background-color: #E1E1E1;
 }
 
-.linkBox{
+.linkBox {
     flex: 1 1 50%;
 }
 
-.linkBox a{
-        text-decoration: none;
+.linkBox a {
+    text-decoration: none;
     color: #635850;
     float: right;
-    padding: 0 15px;
+    padding: 0 1.5rem;
+    font-size: 1.3rem;
 }
 
-.linkBox a:hover{
+.linkBox a:hover {
     font-weight: 800;
     transform: scale(1.1);
 }
@@ -116,13 +112,13 @@ footer{
 
 /*=======SKILLS===========*/
 .skills {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: #B3ACA8;
 }
 
-.skill-section p{
-    margin-bottom:5px;
+.skill-section p {
+    margin-bottom: 5px;
 }
 
 .html {
@@ -159,6 +155,16 @@ footer{
         width: 100%;
     }
 
+    html {
+        padding: 20px;
+    }
+
+    .linkBox {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
 
 }
 
@@ -208,18 +214,20 @@ footer{
 
 
 .sg-nav .nav-items a {
-    width: 250px;
     padding-top: 30px;
+    width: auto;
+    text-align: center;
+
 }
 
-.sg-nav{
-    height: 80px;
+
+.sg-nav {
     padding: 0 90px;
+    width: 100vw;
+
 }
 
 .sg-title {
     margin-top: 120px;
     text-align: center;
 }
-
-

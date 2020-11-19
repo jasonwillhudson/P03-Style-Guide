@@ -175,22 +175,36 @@
 
 /*======================PROJECTS DISPLAY===========*/
 
-.project-box{
+.project-box {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.project-box .img-hover{
+.project-box .img-hover {
     flex: 1 1 50%;
     height: 100%;
 }
 
-.project-box .projects-intro{
+.project-box .projects-intro {
     flex: 1 1 50%;
     padding-left: 50px;
 }
 
-.project-box h2{
-    margin-bottom: 10px;
+.project-box h3 {
+    margin: 20px 0;
+}
+
+@media(max-width: 600px) {
+    .project-box {
+        flex-direction: column;
+    }
+
+    .project-box .projects-intro {
+        padding-left: 0;
+        text-align: center;
+    }
+
 }
 
 /*=======Font sample===========*/
@@ -199,7 +213,7 @@
     flex: 1 1 40%;
 }
 
-.font-sample h1{
+.font-sample h1 {
     margin: 0;
 }
 

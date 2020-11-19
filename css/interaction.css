@@ -22,7 +22,6 @@ input[type="text"]:hover {
 /*IMAGE HOVER*/
 
 .img-hover{
-    border: 2px solid #635850;
     padding: 0;
     height: auto;
 }
