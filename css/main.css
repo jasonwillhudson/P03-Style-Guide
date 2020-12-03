@@ -20,7 +20,7 @@ p {
 
 h1 {
     font-family: 'Cousine', monospace;
-    font-size: 100px;
+    font-size: 80px;
     font-weight: 600;
     color: #36312F;
 }
@@ -34,7 +34,7 @@ h2 {
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 35px;
     color: #36312F;
 }
 
@@ -62,7 +62,11 @@ footer {
     color: #635850;
     float: right;
     padding: 0 1.5rem;
-    font-size: 1.3rem;
+    font-size: 14px;
+}
+
+footer p{
+    font-size: 14px;
 }
 
 .linkBox a:hover {
@@ -121,16 +125,12 @@ footer {
     margin-bottom: 5px;
 }
 
-.html {
-    width: 100%;
+.skill-section{
+    display: flex;
 }
 
-.css {
-    width: 80%;
-}
-
-.js {
-    width: 10%;
+.right-list{
+    margin-left: 60px;
 }
 
 
