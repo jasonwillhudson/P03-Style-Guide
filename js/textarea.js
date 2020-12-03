@@ -6,6 +6,6 @@ $(document).ready(function () {
         function () {
             $(this).children("textarea").removeClass("textarea_hover"); //Remove an active class to the anchor
         }
-    )
+    );
 
 });
